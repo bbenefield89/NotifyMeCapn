@@ -1,8 +1,8 @@
 <?php
 session_start();
 
-if ($_SESSION['username']) {
-  header('Location: profile.php');
+if (isset($_SESSION['username'])) {
+  header('Location: notes.php');
 }
 
 include('includes/header.php'); 

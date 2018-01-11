@@ -23,7 +23,7 @@ function sign_up_form($conn_loc) {
     $_SESSION['username'] = $create_username;
     $_SESSION['email']    = $create_email;
     
-    header('Location: profile.php');
+    header('Location: notes.php');
   } else {
     mysqli_close($conn);
     

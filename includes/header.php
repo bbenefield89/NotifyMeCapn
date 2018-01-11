@@ -37,7 +37,7 @@ if ( isset($_POST[ 'login' ]) ) {
   <body>
     
   <nav class="navbar navbar-expand-sm navbar-light bg-light">
-    <a class="navbar-brand ml-3 ml-sm-5 pl-sm-5" href="/notifyme">NMC!</a>
+    <a class="navbar-brand ml-3 ml-sm-5 pl-sm-5" href="/notifymecapn">NMC!</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -47,7 +47,7 @@ if ( isset($_POST[ 'login' ]) ) {
       <?php if (isset($_SESSION['username'])) : ?>
         
         <li class="nav-item">
-          <a class="nav-link" href="/notifyme/logout.php">
+          <a class="nav-link" href="/notifymecapn/logout.php">
               Log out
           </a>
         </li>
@@ -59,7 +59,7 @@ if ( isset($_POST[ 'login' ]) ) {
             Log in
           </a>
           <div class="dropdown-menu">
-            <form method="POST" action="<?php htmlspecialchars($_POST['PHP_SELF']); ?>">
+            <form method="POST" action="<?php htmlspecialchars($_SERVER['PHP_SELF'], ENT_QUOTES, 'ISO-8859-15'); ?>">
               <div class="form-group">
                 <label for="username">Username</label>
                 <input class="form-control form-control-lg" id="username" type="text" name="login_username">
@@ -80,7 +80,7 @@ if ( isset($_POST[ 'login' ]) ) {
             Create an account
           </a>
           <div class="dropdown-menu">
-            <form method="POST" action="<?php htmlspecialchars($_POST['PHP_SELF']); ?>">
+            <form method="POST" action="<?php htmlspecialchars($_SERVER['PHP_SELF'], ENT_QUOTES, 'ISO-8859-15'); ?>">
               <div class="form-group">
                 <label for="create-username">Username</label>
                 <input class="form-control form-control-lg" id="create-username" type="text" name="create_username">

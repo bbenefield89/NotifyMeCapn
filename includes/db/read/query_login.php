@@ -21,7 +21,7 @@ if ($query->rowCount() > 0) {
   
   if (password_verify($formPassword, $hashed_password)) {
     $_SESSION['username'] = htmlentities($username, ENT_QUOTES, 'ISO-8859-15');
-    header('Location: profile.php');
+    header('Location: notes.php');
   } else {
     echo 'Passwords do not match';
   }

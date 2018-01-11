@@ -18,7 +18,7 @@ $create = $query->execute(
 
 if ($create) {
   $_SESSION['username'] = $create_username;
-  header('Location: profile.php');
+  header('Location: notes.php');
 } else {
   echo 'Woops';
 }
