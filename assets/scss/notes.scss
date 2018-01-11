@@ -1,0 +1,85 @@
+.notes-container {
+  max-width: 1200px;
+}
+
+.saved-notes,
+.current-note {
+  margin-bottom: 5px;
+
+  header {
+    background: #ddd;
+    box-shadow: 0 0 3px;
+    padding: 15px;
+  }
+  
+  header + div {
+    box-shadow: 0 0 5px;
+    
+    form {
+      display: flex;
+      flex-wrap: nowrap;
+      padding: 10px;
+      
+      input[name="note_name"] {
+        width: 100%;
+      }
+    }
+    
+    .single-note-form {
+      display: flex;
+      
+      &:nth-child(even) {
+        background: #ddd;
+      }
+      
+      p,
+      button[name="edit_note"] {
+        background: transparent;
+        border: 0;
+        font-size: 1.25rem;
+        font-weight: 300;
+        margin: 0;
+        overflow-x: hidden;
+        padding: 20px;
+        text-align: left;
+        width: 100%;
+      }
+      
+      input[name="edit_note_title_input"] {
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        display: none;
+        font-size: 1.25rem;
+        font-weight: 300;
+        margin-right: 20px;
+        padding: 19px 20px;
+      }
+      
+      .start-edit,
+      button[name="edit_note_title"],
+      button[name="delete_note"],
+      .cancel-edit,
+      button.d-none {
+        background: transparent;
+        border: 0;
+        font-weight: bold;
+        width: 48px;
+      }
+      
+      button[name="edit_note_title"] {
+        display: none;
+      }
+    }
+  }
+  
+  textarea {
+    box-shadow: 0 0 3px;
+    height: 64vh;
+    resize: none;
+    width: 100%;
+  }
+  
+  input[name="note_submit"] {
+    width: 100%;
+  }
+}

@@ -1,0 +1,32 @@
+.index-header {
+  color: #222;
+  letter-spacing: 1px;
+  
+  h1 {
+    max-width: 800px;
+  }
+  
+  p {
+    max-width: 500px;
+  }
+}
+
+.index-main-row {
+  background: #fbfbfb;
+  
+  .fa-android {
+    color: limegreen;
+  }
+  
+  .fa-handshake {
+    color: royalblue;
+  }
+  
+  .fa-searchengin {
+    color: slategray;
+  }
+  
+  .fa-money-bill-alt {
+    color: forestgreen;
+  }
+}

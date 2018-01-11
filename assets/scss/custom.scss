@@ -1,0 +1,26 @@
+body {
+  background: #fdfdfd;
+}
+
+nav {
+  
+  .dropdown-menu {
+    padding: 20px;
+    
+    @media screen and (min-width: 576px) {
+      left: -50px;
+      width: 300px;
+    }
+    
+    input {
+      font-size: 1rem;
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+@import 'index';
+@import 'notes';

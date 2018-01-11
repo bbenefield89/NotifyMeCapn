@@ -1,0 +1,78 @@
+.notes-container {
+  max-width: 1200px; }
+
+.saved-notes,
+.current-note {
+  margin-bottom: 5px; }
+  .saved-notes header,
+  .current-note header {
+    background: #ddd;
+    box-shadow: 0 0 3px;
+    padding: 15px; }
+  .saved-notes header + div,
+  .current-note header + div {
+    box-shadow: 0 0 5px; }
+    .saved-notes header + div form,
+    .current-note header + div form {
+      display: flex;
+      flex-wrap: nowrap;
+      padding: 10px; }
+      .saved-notes header + div form input[name="note_name"],
+      .current-note header + div form input[name="note_name"] {
+        width: 100%; }
+    .saved-notes header + div .single-note-form,
+    .current-note header + div .single-note-form {
+      display: flex; }
+      .saved-notes header + div .single-note-form:nth-child(even),
+      .current-note header + div .single-note-form:nth-child(even) {
+        background: #ddd; }
+      .saved-notes header + div .single-note-form p,
+      .saved-notes header + div .single-note-form button[name="edit_note"],
+      .current-note header + div .single-note-form p,
+      .current-note header + div .single-note-form button[name="edit_note"] {
+        background: transparent;
+        border: 0;
+        font-size: 1.25rem;
+        font-weight: 300;
+        margin: 0;
+        overflow-x: hidden;
+        padding: 20px;
+        text-align: left;
+        width: 100%; }
+      .saved-notes header + div .single-note-form input[name="edit_note_title_input"],
+      .current-note header + div .single-note-form input[name="edit_note_title_input"] {
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        display: none;
+        font-size: 1.25rem;
+        font-weight: 300;
+        margin-right: 20px;
+        padding: 19px 20px; }
+      .saved-notes header + div .single-note-form .start-edit,
+      .saved-notes header + div .single-note-form button[name="edit_note_title"],
+      .saved-notes header + div .single-note-form button[name="delete_note"],
+      .saved-notes header + div .single-note-form .cancel-edit,
+      .saved-notes header + div .single-note-form button.d-none,
+      .current-note header + div .single-note-form .start-edit,
+      .current-note header + div .single-note-form button[name="edit_note_title"],
+      .current-note header + div .single-note-form button[name="delete_note"],
+      .current-note header + div .single-note-form .cancel-edit,
+      .current-note header + div .single-note-form button.d-none {
+        background: transparent;
+        border: 0;
+        font-weight: bold;
+        width: 48px; }
+      .saved-notes header + div .single-note-form button[name="edit_note_title"],
+      .current-note header + div .single-note-form button[name="edit_note_title"] {
+        display: none; }
+  .saved-notes textarea,
+  .current-note textarea {
+    box-shadow: 0 0 3px;
+    height: 64vh;
+    resize: none;
+    width: 100%; }
+  .saved-notes input[name="note_submit"],
+  .current-note input[name="note_submit"] {
+    width: 100%; }
+
+/*# sourceMappingURL=notes.css.map */

@@ -1,0 +1,20 @@
+.index-header {
+  color: #222;
+  letter-spacing: 1px; }
+  .index-header h1 {
+    max-width: 800px; }
+  .index-header p {
+    max-width: 500px; }
+
+.index-main-row {
+  background: #fbfbfb; }
+  .index-main-row .fa-android {
+    color: limegreen; }
+  .index-main-row .fa-handshake {
+    color: royalblue; }
+  .index-main-row .fa-searchengin {
+    color: slategray; }
+  .index-main-row .fa-money-bill-alt {
+    color: forestgreen; }
+
+/*# sourceMappingURL=index.css.map */
