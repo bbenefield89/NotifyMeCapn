@@ -23,16 +23,4 @@ if ($create) {
   echo 'Woops';
 }
 
-// $result = mysqli_query($conn, $query);
-
-// // if everything is okay create new user
-// if ($result) {
-//   $_SESSION['username'] = $create_username;
-//   $_SESSION['email']    = $create_email;
-  
-//   header('Location: profile.php');
-// } else {
-//   echo 'Error: '.$query.'<br>'.mysqli_error($conn);
-// }
-
 ?>

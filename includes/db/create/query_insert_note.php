@@ -21,14 +21,4 @@ if ($result) {
   $conn = NULL;
 }
 
-// $result = mysqli_query($conn, $query);
-
-// // close db connection
-// if ($result) {
-//   mysqli_close($conn);
-// } else {
-//   mysqli_close($conn);
-//   echo 'Error: '.$query.'<br>'.mysqli_error($conn);
-// }
-
 ?>

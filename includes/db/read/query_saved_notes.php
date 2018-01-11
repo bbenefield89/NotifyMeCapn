@@ -34,24 +34,4 @@ if ($result) {
   echo 'Zero notes available';
 }
 
-// $result = mysqli_query($conn, $query);
-
-// if (mysqli_num_rows($result) > 0) {
-//   // create empty array for future use
-//   $notes = [];
-  
-//   while ($row = mysqli_fetch_assoc($result)) {
-//     // push all the data from $row into $notes array
-//     $notes[] = [ 'id' => $row['id'], 'note_name' => $row['note_name'] ];
-//   }
-  
-//   // close connection and return array containing note details from DB
-//   mysqli_close($conn);
-  
-//   return $notes;
-// } else {
-//   mysqli_close($conn);
-//   echo '<p>No notes available</p>';
-// }
-
 ?>
