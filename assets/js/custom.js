@@ -8,15 +8,15 @@ $('.saved-notes header').click((e) => {
   $('header + div').slideToggle('slow');
 });
 
-// displays advanced options a user can take on a single saved note
-// i.e.: edit note, delete note
-const singleNoteForm = document.querySelectorAll('.single-note-form');
-const editNoteButton = document.querySelectorAll('button[name="edit_note"]');
-const editNoteTitleInput = document.querySelectorAll('input[name="edit_note_title_input"]');
-const startEdit = document.querySelectorAll('button.start-edit');
-const deleteNote = document.querySelectorAll('button[name="delete_note"]');
-const editNoteTitle = document.querySelectorAll('button[name="edit_note_title"]');
-const cancelEditButton = document.querySelectorAll('.cancel-edit');
+  // displays advanced options a user can take on a single saved note
+  // i.e.: edit note, delete note
+  const singleNoteForm = document.querySelectorAll('.single-note-form');
+  const editNoteButton = document.querySelectorAll('button[name="edit_note"]');
+  const editNoteTitleInput = document.querySelectorAll('input[name="edit_note_title_input"]');
+  const startEdit = document.querySelectorAll('button.start-edit');
+  const deleteNote = document.querySelectorAll('button[name="delete_note"]');
+  const editNoteTitle = document.querySelectorAll('button[name="edit_note_title"]');
+  const cancelEditButton = document.querySelectorAll('.cancel-edit');
 
 for (let i = 0; i < singleNoteForm.length; i++) {
   startEdit[i].addEventListener('click', (e) => {
@@ -32,7 +32,7 @@ for (let i = 0; i < singleNoteForm.length; i++) {
   
   cancelEditButton[i].addEventListener('click', (e) => {
     e.preventDefault();
-    
+      
     editNoteButton[i].style.display = 'inline-block';
     editNoteTitleInput[i].style.display = 'none';
     editNoteTitle[i].style.display = 'none';
