@@ -13,8 +13,6 @@ $('.saved-notes header').click((e) => {
   const singleNoteForm = document.querySelectorAll('.single-note-form');
   const editNoteButton = document.querySelectorAll('button[name="edit_note"]');
   const editNoteTitleInput = document.querySelectorAll('input[name="edit_note_title_input"]');
-  const startEdit = document.querySelectorAll('button.start-edit');
-  const deleteNote = document.querySelectorAll('button[name="delete_note"]');
   const editNoteTitle = document.querySelectorAll('button[name="edit_note_title"]');
   const cancelEditButton = document.querySelectorAll('.cancel-edit');
 
@@ -39,18 +37,7 @@ for (let i = 0; i < singleNoteForm.length; i++) {
     editNoteTitleInput[i].style.display = 'none';
     editNoteTitle[i].style.display = 'none';
     cancelEditButton[i].style.display = 'none';
-  });
-  
-  // 
-  singleNoteForm[i].addEventListener('mouseover', () => {
-    if (editNoteTitleInput[i].style.display !== 'inline-block') {
-      startEdit[i].style.display  = 'inline-block';
-      deleteNote[i].style.display = 'inline-block';
-    }
-  });
-    
-  singleNoteForm[i].addEventListener('mouseout', () => {
-    startEdit[i].style.display  = 'none';
-    deleteNote[i].style.display = 'none';
+    startEdit[i].style.display = 'inline-block';
+    deleteNote[i].style.display = 'inline-block';
   });
 }
