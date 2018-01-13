@@ -12,5 +12,4 @@
 - Delete (DELETE) data from the database. Currently users can completely delete a note including the title and content.
 
 ### Plans for the future
-- Finish the "Profile" section.
 - Use AJAX to create a seamless experience.
