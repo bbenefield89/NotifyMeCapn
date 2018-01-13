@@ -19,6 +19,7 @@ $('.saved-notes header').click((e) => {
   const cancelEditButton = document.querySelectorAll('.cancel-edit');
 
 for (let i = 0; i < singleNoteForm.length; i++) {
+  // clicking on the `pencil` icon will hide the note title and replace it with an input
   startEdit[i].addEventListener('click', (e) => {
     e.preventDefault();
     
@@ -30,6 +31,7 @@ for (let i = 0; i < singleNoteForm.length; i++) {
     cancelEditButton[i].style.display = 'inline-block';
   });
   
+  // this will cancel any edits made to the note title
   cancelEditButton[i].addEventListener('click', (e) => {
     e.preventDefault();
       
@@ -39,6 +41,7 @@ for (let i = 0; i < singleNoteForm.length; i++) {
     cancelEditButton[i].style.display = 'none';
   });
   
+  // 
   singleNoteForm[i].addEventListener('mouseover', () => {
     if (editNoteTitleInput[i].style.display !== 'inline-block') {
       startEdit[i].style.display  = 'inline-block';
